@@ -1176,7 +1176,23 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 /*responsive*/
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 2000px) {
+    #fh5co-section-one {
+        min-height: 900px;
+    }
+}
+@media screen and (max-width: 1140px) {
+    .fh5co-section-two p {
+        font-size: 20px;
+        line-height: 30px;
+        width: 90%;
+        margin: auto;
+    }
+    .fh5co-section-two-left, .fh5co-section-two-right, .fh5co-section-five-left, .fh5co-section-five-right {
+        display: none;
+    }
+}
+@media screen and (max-width: 998px) {
     .container{
         width: auto;
     }
@@ -1188,22 +1204,79 @@ h1, h2, h3, h4, h5, h6, figure {
         background: #003C43;
         padding-bottom: 30px;
     }
+    .js-fh5co-nav-toggle{
+        top: 10px;
+    }
+    .fh5co-section-six h1 {
+        position: relative;
+        top: 160px;
+    }
+    
 }
 @media screen and (max-width: 768px) {
     .js-fh5co-nav-toggle{
-        top: 22px;
+        top: 10px;
     }
     #fh5co-section-one{
-        background-image: none!important;
         border: 0px;
         padding: 0px!important;
         height: auto;
         min-height: 600px;
-        background: #a8c717;
         margin-top: 0px;
         padding-bottom: 30px;
     }
     .h1-title{
         text-align: center;
+    }
+
+    #fh5co-section-one img{
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .title-second {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 30px;
+        line-height: 40px!important;
+    }
+}
+@media screen and (max-width: 590px) {
+    .icons{
+        display: block;
+    }
+    .icons li{
+        width: 100%;
+    }
+    .p-sectionfuor{
+        font-size: 20px!important;
+    }
+    .btn-search{
+        font-size: 18px!important;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .h1-title{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #fh5co-section-one img{
+        width: 90%;
+    }
+    .btn-about {
+        font-size: 20px!important;
+        font-weight: bold!important;
+        border-radius: 10px!important;
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px!important;
+    }
+    .title-second {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .icons li img{
+        width: 50%!important;
     }
 }

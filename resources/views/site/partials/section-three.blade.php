@@ -2,7 +2,7 @@
 <div class="form-show-1" id="fh5co-section-one" style="background-image: url({{asset('site/images/imtwo.jpg')}});">
     <div class="container">
 			<div class="row animate-box">
-				<div class="col-xs-12 col-md-6 text-center fh5co-heading">
+				<div class="col-xs-6 col-sm-6 col-md-6 text-center fh5co-heading">
 					<h1 class="h1-title title-second">
                         <strong>cooperativismo</strong> 
                         APROXIMA E FAZ 

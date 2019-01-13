@@ -16,7 +16,7 @@
                     </ul>
                 </div>
                 <div class="col-xs-12 col-md-12 text-center fh5co-heading">
-                    <p style="font-size:25px;">Os produtos e serviços Sicoob formam uma verdadeira seleção. Conta corrente, 
+                    <p class="p-sectionfuor" style="font-size:25px;">Os produtos e serviços Sicoob formam uma verdadeira seleção. Conta corrente, 
                             poupança, financiamento, cartões, consórcios, linhas de crédito, pagamentos e muito mais. 
                             O Sicoob é craque em oferecer soluções financeiras para o seu dia a dia.
                             </p>
