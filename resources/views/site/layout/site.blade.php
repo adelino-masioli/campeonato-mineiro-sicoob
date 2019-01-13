@@ -24,6 +24,8 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <!-- Animate.css -->
     <link rel="stylesheet" href="{{asset('site/css/animate.css')}}">

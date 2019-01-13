@@ -2,17 +2,24 @@
     <div class="top-menu">
         <div class="container">
             <div class="row">
-                <div class="col-xs-2 brand">
-                    <div id="fh5co-logo"><a href="javascript:void(0);" onclick="scrollToDiv('#gotohome');"><img src="{{asset('site/images/brand.png')}}" alt=""></a></div>
-                </div>
-                <div class="col-xs-10 text-right menu-1">
+                <div class="col-xs-12 text-center menu-1">
                     <ul>
-                        <li><a href="javascript:void(0);" onclick="scrollToDiv('#gotohome');">Home</a></li>
-                        <li><a href="javascript:void(0);" onclick="scrollToDiv('#lk_comoparticipar');">Como participar</a></li>
-                        <li><a href="javascript:void(0);" onclick="scrollToDiv('#lk_formconsult');">Consulte os números da sorte</a></li>
-                        <li><a href="javascript:void(0);" onclick="scrollToDiv('#lk_result');">Sorteios</a></li>
-                        <li><a href="{{route('regulation')}}">Regulamento</a></li>
-                        <li><a href="javascript:void(0);" onclick="scrollToDiv('#lk_contact');">Fale conosco</a></li>
+                        <li><a class="menutop" href="javascript:void(0);" onclick="scrollToDiv('#lk_section_two');" onmouseover="showArrow('#arrowone');">
+                            <span class="border-left"></span>
+                            O SICOOB
+                            <span class="border-right"></span>
+                            <i  id="arrowone"></i>
+                        </a></li>
+                        <li><a class="menutop" href="javascript:void(0);" onclick="scrollToDiv('#lk_section_fuor');" onmouseover="showArrow('#arrowtwo');">
+                            SEJA UM ASSOCIADO                            
+                            <i id="arrowtwo"></i>
+                        </a></li>
+                        <li><a class="menutop" href="javascript:void(0);" onclick="scrollToDiv('#lk_section_five');" onmouseover="showArrow('#arrowthree');">
+                            <span class="border-left"></span>
+                            TABELA
+                            <span class="border-right"></span>
+                            <i  id="arrowthree"></i>
+                        </a></li>
                     </ul>
                 </div>
             </div>

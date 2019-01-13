@@ -304,10 +304,15 @@
 
 function scrollToDiv(div) {
     $('html').animate({
-        scrollTop: $(div).offset().top - 70
+        scrollTop: $(div).offset().top - 64
     }, 500, 'easeInOutExpo');
 
     return false;
+}
+
+function showArrow(div) {
+    $('.menutop i').hide();
+    $('.menutop '+div).show();
 }
 
 //only number
