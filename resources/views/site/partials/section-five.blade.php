@@ -18,13 +18,13 @@
                                         <div class="col-xs-5 col-md-5 showres">
                                                 <img src="{{asset('escudos/Guarani-Divinopolis-MG.svg')}}" class="img-responsive" alt="Guarani-MG">
                                                 <p class="nametime">Guarani</p>
-                                                <span class="placar">0</span>
+                                                <span class="placard hidden">0</span>
                                         </div>
                                         <div class="col-xs-2 col-md-2 showres showresx"><h2>X</h2></div>
                                         <div class="col-xs-5 col-md-5 showres">
                                                 <img src="{{asset('escudos/cruzeiro.svg')}}" class="img-responsive" alt="Cruzeiro">
                                                 <p class="nametime">Cruzeiro</p>
-                                                <span class="placar">0</span>
+                                                <span class="placar hidden">0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -33,13 +33,13 @@
                                                 <div class="col-xs-5 col-md-5 showres">
                                                         <img src="{{asset('escudos/tupi.svg')}}" class="img-responsive" alt="Tupi-MG">
                                                         <p class="nametime">Tupi</p>
-                                                        <span class="placar">0</span>
+                                                        <span class="placar hidden">0</span>
                                                 </div>
                                                 <div class="col-xs-2 col-md-2 showres showresx"><h2>X</h2></div>
                                                 <div class="col-xs-5 col-md-5 showres">
                                                         <img src="{{asset('escudos/Tombense.svg')}}" class="img-responsive" alt="Tombense">
                                                         <p class="nametime">Tombense</p>
-                                                        <span class="placar">0</span>
+                                                        <span class="placar hidden">0</span>
                                                 </div>
                                         </div>
                                 </div>
@@ -48,13 +48,13 @@
                                                 <div class="col-xs-5 col-md-5 showres">
                                                         <img src="{{asset('escudos/caldense_mg-.svg')}}" class="img-responsive" alt="Caldense">
                                                         <p class="nametime">Caldense</p>
-                                                        <span class="placar">0</span>
+                                                        <span class="placar hidden">0</span>
                                                 </div>
                                                 <div class="col-xs-2 col-md-2 showres showresx"><h2>X</h2></div>
                                                 <div class="col-xs-5 col-md-5 showres">
                                                         <img src="{{asset('escudos/america-mg.svg')}}" class="img-responsive" alt="América">
                                                         <p class="nametime">América</p>
-                                                        <span class="placar">0</span>
+                                                        <span class="placar hidden">0</span>
                                                 </div>
                                         </div>
                                 </div>
@@ -64,13 +64,13 @@
                                                 <div class="col-xs-5 col-md-5 showres">
                                                         <img src="{{asset('escudos/Villa_Nova.svg')}}" class="img-responsive" alt="Villa Nova">
                                                         <p class="nametime">Villa Nova</p>
-                                                        <span class="placar">0</span>
+                                                        <span class="placar hidden">0</span>
                                                 </div>
                                                 <div class="col-xs-2 col-md-2 showres showresx"><h2>X</h2></div>
                                                 <div class="col-xs-5 col-md-5 showres">
                                                         <img src="{{asset('escudos/tupynambas.svg')}}" class="img-responsive" alt="Tupynambás">
                                                         <p class="nametime">Tupynambás</p>
-                                                        <span class="placar">0</span>
+                                                        <span class="placar hidden">0</span>
                                                 </div>
                                         </div>
                                 </div>
@@ -80,13 +80,13 @@
                                                 <div class="col-xs-5 col-md-5 showres">
                                                         <img src="{{asset('escudos/atletico-mg.svg')}}" class="img-responsive" alt="ATLÉTICO">
                                                         <p class="nametime">ATLÉTICO</p>
-                                                        <span class="placar">0</span>
+                                                        <span class="placar hidden">0</span>
                                                 </div>
                                                 <div class="col-xs-2 col-md-2 showres showresx"><h2>X</h2></div>
                                                 <div class="col-xs-5 col-md-5 showres">
                                                         <img src="{{asset('escudos/boa-esporte.svg')}}" class="img-responsive" alt="Boa Esporte">
                                                         <p class="nametime">Boa Esporte</p>
-                                                        <span class="placar">0</span>
+                                                        <span class="placar hidden">0</span>
                                                 </div>
                                         </div>
                                 </div>
@@ -96,13 +96,13 @@
                                                 <div class="col-xs-5 col-md-5 showres">
                                                         <img src="{{asset('escudos/Patrocinense.svg')}}" class="img-responsive" alt="Patrocinense">
                                                         <p class="nametime">Patrocinense</p>
-                                                        <span class="placar">0</span>
+                                                        <span class="placar hidden">0</span>
                                                 </div>
                                                 <div class="col-xs-2 col-md-2 showres showresx"><h2>X</h2></div>
                                                 <div class="col-xs-5 col-md-5 showres">
                                                         <img src="{{asset('escudos/URT.svg')}}" class="img-responsive" alt="URT">
                                                         <p class="nametime">URT</p>
-                                                        <span class="placar">0</span>
+                                                        <span class="placar hidden">0</span>
                                                 </div>
                                         </div>
                                 </div>
