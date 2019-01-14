@@ -1211,9 +1211,9 @@ h1, h2, h3, h4, h5, h6, figure {
         position: relative;
         top: 160px;
     }
-    .fh5co-section-one .img-responsive{
-        margin: auto;
-        margin-bottom: 20px;
+    .img-box-one{
+        margin: auto!important;
+        margin-bottom: 20px!important;
     }
     
 }

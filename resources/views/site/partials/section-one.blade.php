@@ -9,7 +9,7 @@
                         DE TODOS NÓS.<br/>
                     </h1>
                 </div>
-                <div class="col-xs-12 col-md-6 text-center fh5co-heading">
+                <div class="col-xs-12 col-md-6 text-center fh5co-heading img-box-one">
                     <img src="{{asset('site/images/logo.png')}}" class="img-responsive" alt="Campeonato Mineiro Sicoob">
                 </div>
 
