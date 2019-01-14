@@ -22,7 +22,7 @@
                             </p>
                 </div>     
                 <div class="col-xs-12 col-md-12 text-center fh5co-heading">
-                    <a class="btn-search" target="_blank" href="http://www.sicoob.com.br/pesquisa-cooperativa">Encontre a cooperativa mais próxima</a>
+                    <a class="btn-search" target="_blank" href="http://www.sicoob.com.br/pesquisa-cooperativa">Encontre a cooperativa mais próxima.</a>
                 </div>      
             </div>
     </div>

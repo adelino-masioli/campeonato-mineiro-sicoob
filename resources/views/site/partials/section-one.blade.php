@@ -4,7 +4,7 @@
 			<div class="row animate-box">
 				<div class="col-xs-12 col-md-6 text-center fh5co-heading">
 					<h1 class="h1-title">
-                        NO <strong>cooperativismo</strong><br/>
+                        NO <strong>COOPERATIVISMO,</strong><br/>
                         A VITÓRIA É<br/>
                         DE TODOS NÓS.<br/>
                     </h1>

@@ -7,7 +7,7 @@
 					<h1 class="h1-title title-fuor">
                             A cada partida, novas emoções.<br/>
                             Confira os resultados da rodada.<br/>                         
-                            1ª RODADA
+                            SEMIFINAIS: xx/xx - xx/xx
                         </h1>
                 </div>
 
