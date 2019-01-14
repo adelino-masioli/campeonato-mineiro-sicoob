@@ -54,22 +54,19 @@
     <script src="{{asset('site/js/respond.min.js')}}"></script>
     <![endif]-->
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109689822-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-
-    gtag('config', 'UA-109689822-1');
+    <!-- Global site tag (gtag.js) - Google Ads: 805693732 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-805693732"></script>    
+    <script>    
+      window.dataLayer = window.dataLayer || [];    
+      function gtag(){dataLayer.push(arguments);}    
+      gtag('js', new Date());    
+      gtag('config', 'AW-805693732');    
     </script>
 
 
-
-    <!-- Event snippet for Cartão Premiado conversion page -->
+    <!-- Event snippet for Campeonato Mineiro 2019 conversion page -->
     <script>
-    gtag('event', 'conversion', {'send_to': 'AW-805693732/uP2sCPO2mJABEKTSl4AD'});
+      gtag('event', 'conversion', {'send_to': 'AW-805693732/DMgSCNe_mJMBEKTSl4AD'});
     </script>
 
     <!-- Facebook Pixel Code -->
@@ -91,8 +88,7 @@
 
 </head>
 <body>
-    <!-- Google Code for Cart&atilde;o Premiado SicoobCard Conversion Page -->
-
+    <!-- Google Code  -->
     <script type="text/javascript">
         /* <![CDATA[ */
         var google_conversion_id = 856107660;
