@@ -18,6 +18,10 @@
                         @foreach(\App\Round::getRouds($game->id) as $round)
                         <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 text-center">
                             <div class="row">
+                                <div class="col-xs-12 col-md-12 animated fadeInRightBig">
+                                        <small class="datetimeround">{{$round->date}}</small>
+                                </div>
+
                                 <div class="col-xs-5 col-md-5 showres animated fadeInRightBig">
                                         <img src="{{asset('escudos/'.$round->teamA->flag)}}" class="img-responsive" alt="{{$round->teamA->name}}">
                                         <p class="nametime">{{$round->teamA->name}}</p>
