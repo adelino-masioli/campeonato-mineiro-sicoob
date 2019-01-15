@@ -3,7 +3,7 @@
         <div class="col-xs-12 col-md-12 text-center fh5co-heading">
                 <h1 class="h1-title title-fuor animated fadeInUp">
                         A cada partida, novas emoções.<br/>
-                        Confira os resultados da rodada.<br/>                         
+                        Confira os jogos da rodada.<br/>                         
                         <span class="ctrl pull-left icon icon-arrow-left" onclick="navigation('left', '{{$game->id}}');"></span>
                         {{$game->title}}
                         <span class="ctrl pull-right icon icon-arrow-right" onclick="navigation('right', '{{$game->id}}');"></span>
