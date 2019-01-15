@@ -80,10 +80,10 @@
            function updateRound(id){
                 $.post( "/round-update", { 
                     id: id, 
-                    date: $('#date').val(),
-                    result_a: $('#result_a').val(),
-                    result_b: $('#result_b').val(),
-                    order: $('#order').val() , 
+                    date: $('#date'+id).val(),
+                    result_a: $('#result_a'+id).val(),
+                    result_b: $('#result_b'+id).val(),
+                    order: $('#order'+id).val(), 
                     _token: $('#_token').val() 
                 })
                 .done(function( data ) {

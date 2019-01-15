@@ -27,4 +27,33 @@ class SiteController extends Controller
         return view('site.index', compact('games'));
     }
 
+    public function next($id)
+    {
+        $lastid =  Game::orderBy('id', 'desc')->first();
+        $nextid = $id == $lastid->id? 1 : $id+1;
+
+        $gamesres = Game::where('id', $nextid)->orderBy('order', 'asc');
+        if($gamesres->count() > 0){
+            $games = $gamesres->get();
+            $count = $gamesres->count();
+            return view('site.partials.partialfive', compact('games', 'count'));
+        }else{
+            return 'false';
+        }
+    }
+
+    public function prev($id)
+    {
+        $lastid =  Game::orderBy('id', 'desc')->first();
+        $nextid = $id == 1 ? $lastid->id : $id-1;
+        $gamesres = Game::where('id', $nextid)->orderBy('order', 'asc');
+        if($gamesres->count() > 0){
+            $games = $gamesres->get();
+            $count = $gamesres->count();
+            return view('site.partials.partialfiveleft', compact('games', 'count'));
+        }else{
+            return 'false';
+        }
+    }
+
 }

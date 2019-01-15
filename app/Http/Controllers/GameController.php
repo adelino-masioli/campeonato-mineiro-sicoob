@@ -50,7 +50,8 @@ class GameController extends Controller
     {
         try{
             $data['title']   = $request->title;
-            $data['status']  = 2;
+            $data['order']   = 1;
+            $data['status']  = 3;
             $array           = Game::create($data);
 
             if ($array->save()):

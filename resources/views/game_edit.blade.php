@@ -123,10 +123,10 @@
                         <tr id="tr_{{$round->id}}">
                             <td class="text-center"><img class="pull-left" width="35" src="{{asset('escudos/'.$round->teamA->flag)}}" alt="{{$round->teamA->name}}">{{$round->teamA->name}}</td> 
                             <td class="text-center"><img class="pull-left" width="35" src="{{asset('escudos/'.$round->teamB->flag)}}" alt="{{$round->teamB->name}}">{{$round->teamB->name}}</td> 
-                            <td class="text-center"><input type="text" name="date" class="form-control" id="date" value="{{$round->date}}"></td>
-                            <td class="text-center"><input type="text" name="result_a" class="form-control" id="result_a" value="{{$round->result_a}}"></td>
-                            <td class="text-center"><input type="text" name="result_b" class="form-control" id="result_b" value="{{$round->result_b}}"></td>
-                            <td class="text-center"><input type="text" name="order" class="form-control" id="order" value="{{$round->order}}"></td>
+                            <td class="text-center"><input type="text" name="date" class="form-control" id="date{{$round->id}}" value="{{$round->date}}"></td>
+                            <td class="text-center"><input type="text" name="result_a" class="form-control" id="result_a{{$round->id}}" value="{{$round->result_a}}"></td>
+                            <td class="text-center"><input type="text" name="result_b" class="form-control" id="result_b{{$round->id}}" value="{{$round->result_b}}"></td>
+                            <td class="text-center"><input type="text" name="order" class="form-control" id="order{{$round->id}}" value="{{$round->order}}"></td>
                             <td class="text-center">
                                 <button class="btn btn-xs btn-success" onclick="updateRound('{{$round->id}}');">ATUALIZAR</button>
                                 <a class="btn btn-xs btn-danger" href="/round-destroy/{{$round->id}}">EXCLUIR</a>

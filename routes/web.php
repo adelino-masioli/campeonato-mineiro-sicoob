@@ -15,6 +15,9 @@
     return view('site.index');
 });*/
 Route::get('/', 'SiteController@index');
+Route::get('next/{id}', 'SiteController@next');
+Route::get('prev/{id}', 'SiteController@prev');
+
 
 
 Auth::routes();

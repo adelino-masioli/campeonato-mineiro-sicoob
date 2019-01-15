@@ -158,6 +158,24 @@
 
     @stack('scripts')
 
+    <script>
+        function navigation(dr, id){
+            if(dr === 'right'){
+                $.get( "/next/"+id, function( data ) {
+                    if(data !== 'false'){
+                        $('.showrodadas').html(data);
+                    } 
+                });
+            }else{
+                $.get( "/prev/"+id, function( data ) {
+                    if(data !== 'false'){
+                        $('.showrodadas').html(data);
+                    } 
+                });
+            }
+        }
+    </script>
+
 
 </body>
 </html>
