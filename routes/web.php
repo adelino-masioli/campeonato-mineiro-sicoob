@@ -21,7 +21,7 @@ Route::get('prev/{id}', 'SiteController@prev');
 
 
 Auth::routes();
-Route::get('/register', function () {
+Route::get('register', function () {
     return redirect('/');
 });
 
