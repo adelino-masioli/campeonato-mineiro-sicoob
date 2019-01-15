@@ -11,19 +11,31 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('site.index');
-});
+});*/
+Route::get('/', 'SiteController@index');
 
 
 Auth::routes();
+Route::get('/register', function () {
+    return redirect('/');
+});
 
 Route::middleware('auth')->get('/home', 'HomeController@index')->name('home');
-//cupons
-//Route::middleware('auth')->get('upload-cupons', '\App\Http\Controllers\CupomController@createList');
-Route::middleware('auth')->get('create-list', 'HomeController@createList');
-Route::middleware('auth')->post('create-list-store', 'HomeController@storeList');
-Route::middleware('auth')->get('create-list-destroy/{id}', 'HomeController@destroyList');
+//games
+Route::middleware('auth')->get('game-create', 'GameController@createGame');
+Route::middleware('auth')->post('game-store', 'GameController@storeGame');
+Route::middleware('auth')->get('game-show/{id}', 'GameController@showGame');
+Route::middleware('auth')->post('game-update', 'GameController@updateGame');
+Route::middleware('auth')->get('game-destroy/{id}', 'GameController@destroyGame');
+
+//round
+Route::middleware('auth')->post('round-store', 'RoundController@storeRound');
+Route::middleware('auth')->get('round-destroy/{id}', 'RoundController@destroyRound');
+Route::middleware('auth')->post('round-update', 'RoundController@updateRound');
+
+
 
 Route::post('consultar-cupons', '\App\Http\Controllers\CupomController@consult')->name('cupons.consult');
 Route::get('numeros-da-sorte', '\App\Http\Controllers\CupomController@numbers')->name('numbers');

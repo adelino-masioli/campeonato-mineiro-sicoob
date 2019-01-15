@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Cartão Premiado') }}</title>
+    <title>Campeonato Mineiro</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -28,9 +28,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
+                    <a style="position:relative;top:2px;" href="{{ url('/') }}"><img src="https://loggia.com.br/wp-content/uploads/2016/04/loggia.jpg" class="img-responsive" width="60" alt="Loggia"></a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -76,5 +74,22 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+
+
+    <script>
+           function updateRound(id){
+                $.post( "/round-update", { 
+                    id: id, 
+                    date: $('#date').val(),
+                    result_a: $('#result_a').val(),
+                    result_b: $('#result_b').val(),
+                    order: $('#order').val() , 
+                    _token: $('#_token').val() 
+                })
+                .done(function( data ) {
+                    location.reload();
+                });
+           }
+    </script>
 </body>
 </html>

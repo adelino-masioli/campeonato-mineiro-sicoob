@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Game;
+use Image;
 use Illuminate\Support\Str;
+use App\Team;
+use App\Round;
 
-class HomeController extends Controller
+class SiteController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -18,14 +21,10 @@ class HomeController extends Controller
         //$this->middleware('auth');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        $data = Game::orderBy('id', 'asc')->get();
-        return view('home', compact('data'));
+        $games = Game::where('status', 1)->orderBy('order', 'asc')->get();
+        return view('site.index', compact('games'));
     }
+
 }

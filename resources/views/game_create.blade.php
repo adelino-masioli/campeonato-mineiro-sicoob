@@ -5,7 +5,12 @@
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
-                <div class="panel-heading">Cadastro de listas de cupons <a class="btn btn-primary" href="{{url('home')}}">Voltar para listagem</a></div>
+                <div class="panel-heading">
+                    <p style="padding-bottom:8px;">
+                        <a class="btn btn-xs btn-primary pull-left" href="{{url('home')}}">Voltar para listagem</a>
+                        <small class="pull-right">Cadastro de rodada</small>
+                    </p>
+                </div>
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -21,14 +26,13 @@
                     @endif
 
 
-                   <form method="post" action="create-list-store" enctype="multipart/form-data">
-                   <input name="_token" type="hidden" value="{{ csrf_token() }}" />
+                   <form method="post" action="/game-store" enctype="multipart/form-data">
+                        <input name="_token" type="hidden" value="{{ csrf_token() }}" />
                         <div class="form-group">
-                            <label for="file">Selecione o arquivo</label>
-                            <input type="file" name="file" id="file">
-                            <p class="help-block">Somente arquivos .CSV</p>
+                            <label for="file">Descrição da rodada</label>
+                            <input name="title" type="text" class="form-control" value="{{old('title')}}" placeholder="Informe a descrição da rodada" required />
                         </div>
-                        <button type="submit" class="btn btn-default">Enviar</button>
+                        <button type="submit" class="btn btn-default">Avançar</button>
                   </form>
 
                    

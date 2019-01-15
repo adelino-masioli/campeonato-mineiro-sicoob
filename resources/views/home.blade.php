@@ -5,7 +5,12 @@
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
-                <div class="panel-heading">Listagem de cupons <a class="btn btn-primary" href="{{url('create-list')}}">Criar nova lista de cupons</a> </div>
+                <div class="panel-heading">
+                    <p style="padding-bottom:8px;">
+                        <a class="btn btn-xs btn-primary pull-left" href="{{url('game-create')}}">Criar nova rodada</a>
+                        <small class="pull-right">Listagem de Rodadas </small>
+                    </p>
+                </div>
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -23,9 +28,10 @@
                    <table class="table table-condensed table-bordered">
                         <thead>
                             <tr>
-                                <th class="text-center">CAMINHO DO ARQUIVO</th>
-                                <th class="text-center">STATUS</th>                 
-                                <th class="text-center">AÇÃO</th>
+                                <th class="text-center col-md-7">DESCRIÇÃO DA RODADA</th>
+                                <th class="text-center col-md-2">STATUS</th>      
+                                <th class="text-center col-md-1">ORDEM</th>      
+                                <th class="text-center col-md-2">AÇÃO</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -33,9 +39,21 @@
                         
                             @foreach ($data as $list)                        
                             <tr>
-                                <td><a href="/upload/{{$list->document}}">{{$list->document}}</a></td>                            
-                                <td>{{$list->status == 2 ? 'Processado' : 'Não Processado'}}</td>
-                                <td class="text-center text-danger"><a href="{{url('create-list-destroy')}}/{{$list->id}}">EXCLUIR</a></td>
+                                <td>{{$list->title}}</td>            
+                                <td class="text-center">
+                                    @if($list->status == 1)
+                                        Correndo
+                                    @elseif($list->status == 2)
+                                        Aconteceu
+                                    @else
+                                        Vai acontecer
+                                    @endif
+                                </td>
+                                <td>{{$list->order}}</td>
+                                <td class="text-center text-danger">
+                                    <a class="btn btn-xs btn-danger" href="{{url('game-destroy')}}/{{$list->id}}">EXCLUIR</a>
+                                    <a class="btn btn-xs btn-primary" href="{{url('game-show')}}/{{$list->id}}">EDITAR</a>
+                                </td>
                             </tr>
                             @endforeach                        
                         @else
