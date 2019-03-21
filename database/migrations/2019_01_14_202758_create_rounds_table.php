@@ -31,6 +31,8 @@ class CreateRoundsTable extends Migration
             $table->integer('result_a')->nullable();
             $table->integer('result_b')->nullable();
             $table->integer('order')->nullable();
+            $table->string('stadium')->nullable();
+            $table->string('city')->nullable();
             $table->timestamps();
         });
     }

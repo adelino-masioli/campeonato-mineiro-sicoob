@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Round extends Model
 {
     protected $table= 'rounds';
-    protected $fillable = array('game_id', 'team_a_id', 'team_b_id', 'date', 'result_a', 'result_b', 'order');
+    protected $fillable = array('game_id', 'team_a_id', 'team_b_id', 'date', 'result_a', 'result_b', 'order', 'stadium', 'city');
 
 
 

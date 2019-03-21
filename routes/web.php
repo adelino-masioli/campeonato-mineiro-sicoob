@@ -17,6 +17,9 @@
 Route::get('/', 'SiteController@index');
 Route::get('next/{id}', 'SiteController@next');
 Route::get('prev/{id}', 'SiteController@prev');
+Route::get('/staging', 'SiteController@staging');
+Route::get('nextstaging/{id}', 'SiteController@nextstaging');
+Route::get('prevstaging/{id}', 'SiteController@prevstaging');
 
 
 

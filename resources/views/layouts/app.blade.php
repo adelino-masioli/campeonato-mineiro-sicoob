@@ -84,6 +84,8 @@
                     result_a: $('#result_a'+id).val(),
                     result_b: $('#result_b'+id).val(),
                     order: $('#order'+id).val(), 
+                    city: $('#city'+id).val(), 
+                    stadium: $('#stadium'+id).val(), 
                     _token: $('#_token').val() 
                 })
                 .done(function( data ) {

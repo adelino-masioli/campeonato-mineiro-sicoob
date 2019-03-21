@@ -192,6 +192,21 @@
                 });
             }
         }
+        function navigationStaging(dr, id){
+            if(dr === 'right'){
+                $.get( "/nextstaging/"+id, function( data ) {
+                    if(data !== 'false'){
+                        $('.showrodadas').html(data);
+                    } 
+                });
+            }else{
+                $.get( "/prevstaging/"+id, function( data ) {
+                    if(data !== 'false'){
+                        $('.showrodadas').html(data);
+                    } 
+                });
+            }
+        }
     </script>
 
 

@@ -23,16 +23,22 @@ class SiteController extends Controller
 
     public function index()
     {
-        $games = Game::where('status', 1)->orderBy('order', 'asc')->get();
+        $games = Game::where('status', 1)->where('order', '<', 12)->orderBy('order', 'asc')->get();
         return view('site.index', compact('games'));
+    }
+
+    public function staging()
+    {
+        $games = Game::where('status', 1)->orderBy('order', 'asc')->get();
+        return view('site.staging', compact('games'));
     }
 
     public function next($id)
     {
-        $lastid =  Game::orderBy('id', 'desc')->first();
+        $lastid =  Game::orderBy('id', 'desc')->where('order', '<', 12)->first();
         $nextid = $id == $lastid->id? 1 : $id+1;
 
-        $gamesres = Game::where('id', $nextid)->orderBy('order', 'asc');
+        $gamesres = Game::where('id', $nextid)->where('order', '<', 12)->orderBy('order', 'asc');
         if($gamesres->count() > 0){
             $games = $gamesres->get();
             $count = $gamesres->count();
@@ -44,13 +50,43 @@ class SiteController extends Controller
 
     public function prev($id)
     {
+        $lastid =  Game::orderBy('id', 'desc')->where('order', '<', 12)->first();
+        $nextid = $id == 1 ? $lastid->id : $id-1;
+        $gamesres = Game::where('id', $nextid)->where('order', '<', 12)->orderBy('order', 'asc');
+        if($gamesres->count() > 0){
+            $games = $gamesres->get();
+            $count = $gamesres->count();
+            return view('site.partials.partialfiveleft', compact('games', 'count'));
+        }else{
+            return 'false';
+        }
+    }
+
+
+    public function nextstaging($id)
+    {
+        $lastid =  Game::orderBy('id', 'desc')->first();
+        $nextid = $id == $lastid->id? 1 : $id+1;
+
+        $gamesres = Game::where('id', $nextid)->orderBy('order', 'asc');
+        if($gamesres->count() > 0){
+            $games = $gamesres->get();
+            $count = $gamesres->count();
+            return view('site.partials.partialfivestaging', compact('games', 'count'));
+        }else{
+            return 'false';
+        }
+    }
+
+    public function prevstaging($id)
+    {
         $lastid =  Game::orderBy('id', 'desc')->first();
         $nextid = $id == 1 ? $lastid->id : $id-1;
         $gamesres = Game::where('id', $nextid)->orderBy('order', 'asc');
         if($gamesres->count() > 0){
             $games = $gamesres->get();
             $count = $gamesres->count();
-            return view('site.partials.partialfiveleft', compact('games', 'count'));
+            return view('site.partials.partialfiveleftstaging', compact('games', 'count'));
         }else{
             return 'false';
         }

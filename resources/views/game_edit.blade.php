@@ -90,11 +90,23 @@
                                 <input name="result_b" type="text" class="form-control"  placeholder="Fora" />
                             </div>
 
-                            <div class="form-group col-md-2">
+                            <div class="form-group col-md-3">
                                 <label for="file">Ordem</label>
                                 <input name="order" type="number" min="0" class="form-control"  placeholder="Ordem" required />
                             </div>
+   
+                        </div>
 
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="city">Cidade</label>
+                                <input name="city" type="text" class="form-control"  placeholder="Cidade" />
+                            </div>
+         
+                            <div class="form-group col-md-5">
+                                <label for="stadium">Estádio</label>
+                                <input name="stadium" type="text" class="form-control"  placeholder="Estádio" />
+                            </div>
                             <div class="form-group col-md-1">
                                 <button type="submit" class="btn btn-default" style="margin-top:26px;">Salvar</button>
                             </div>
@@ -113,6 +125,8 @@
                             <th class="text-center col-md-1">A</th>
                             <th class="text-center col-md-1">B</th>
                             <th class="text-center col-md-1">ORDEM</th>
+                            <th class="text-center col-md-1">CIDADE</th>
+                            <th class="text-center col-md-1">ESTÁDIO</th>
                             <th class="text-center col-md-2">AÇÃO</th>
                         </tr>
                     </thead>
@@ -127,6 +141,8 @@
                             <td class="text-center"><input type="text" name="result_a" class="form-control" id="result_a{{$round->id}}" value="{{$round->result_a}}"></td>
                             <td class="text-center"><input type="text" name="result_b" class="form-control" id="result_b{{$round->id}}" value="{{$round->result_b}}"></td>
                             <td class="text-center"><input type="text" name="order" class="form-control" id="order{{$round->id}}" value="{{$round->order}}"></td>
+                            <td class="text-center"><input type="text" name="city" class="form-control" id="city{{$round->id}}" value="{{$round->city}}"></td>
+                            <td class="text-center"><input type="text" name="stadium" class="form-control" id="stadium{{$round->id}}" value="{{$round->stadium}}"></td>
                             <td class="text-center">
                                 <button class="btn btn-xs btn-success" onclick="updateRound('{{$round->id}}');">ATUALIZAR</button>
                                 <a class="btn btn-xs btn-danger" href="/round-destroy/{{$round->id}}">EXCLUIR</a>
