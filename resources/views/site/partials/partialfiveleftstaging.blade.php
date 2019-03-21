@@ -43,7 +43,7 @@
                                         <p class="nametime">{{$round->teamB->name}}</p>
                                         <span class="placar">{{$round->result_b}}</span>
                                 </div>
-                            </div>
+                           
                             @if($game->order > 11)
                                 <div class="hidden-xs col-md-4 teamlocal animated fadeInLeftBig">                          
                                         {{$round->city}}<br/>
@@ -51,6 +51,7 @@
                                 </div>
                              @endif
                         </div>
+                </div>
                         @endforeach
                 </div>
         </div>

@@ -15,7 +15,7 @@
     @include("site.partials.section-six")
     @include("site.partials.footer")
 
-    <div class="staging">Ambiente de testes</div>
+    {{-- <div class="staging">Ambiente de testes</div> --}}
 
 	</div>
 

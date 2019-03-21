@@ -23,8 +23,9 @@ class SiteController extends Controller
 
     public function index()
     {
-        $games = Game::where('status', 1)->where('order', '<', 12)->orderBy('order', 'asc')->get();
-        return view('site.index', compact('games'));
+        //$games = Game::where('status', 1)->where('order', '<', 12)->orderBy('order', 'asc')->get();
+        $games = Game::where('status', 1)->orderBy('order', 'asc')->get();
+        return view('site.staging', compact('games'));
     }
 
     public function staging()

@@ -25,6 +25,7 @@
                 <div class="row">
                         @foreach(\App\Round::getRouds($game->id) as $round)
                         <div class="col-xs-12 col-sm-12 col-md-{{$game->order > 11 ? '8' : '6'}} col-md-offset-{{$game->order > 11 ? '2' : '3'}} text-center">
+                                
                             <div class="row">
                         
                                 <div class="col-xs-12 col-md-12 animated fadeInRightBig">
@@ -37,14 +38,16 @@
                                         <p class="nametime">{{$round->teamA->name}}</p>
                                         <span class="placar">{{$round->result_a}}</span>
                                 </div>
+                                
                                 <div class="col-xs-2 col-md-2 showres showresx animated fadeInRightBig" style="{{$game->order > 11 ? 'min-height: 100px;' : ''}}"><h2>X</h2></div>
+
                                 <div class="col-xs-5 col-md-{{$game->order > 11 ? '3' : '5'}} showres animated fadeInRightBig">
                                         <img src="{{asset('escudos/'.$round->teamB->flag)}}" class="img-responsive" alt="{{$round->teamB->name}}">
                                         <p class="nametime">{{$round->teamB->name}}</p>
                                         <span class="placar">{{$round->result_b}}</span>
                                 </div>
                                 @if($game->order > 11)
-                                        <div class="hidden-xs col-md-4 teamlocal animated fadeInRightBig">                          
+                                        <div class="hidden-xs col-md-4 teamlocal animated fadeInRightBig">                           
                                                 {{$round->city}}<br/>
                                                 {{$round->stadium}}
                                         </div>
