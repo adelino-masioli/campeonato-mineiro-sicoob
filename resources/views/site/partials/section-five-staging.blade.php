@@ -9,15 +9,24 @@
                                 @if($game->order <= 11)
                                 A cada partida, novas emoções.<br/>
                                 Confira os jogos da rodada.<br/>
-
+        
                                 <span class="ctrl pull-left icon icon-arrow-left" onclick="navigationStaging('left', '{{$game->id}}');"></span>
                                 {{$game->title}}
                                 <span class="ctrl pull-right icon icon-arrow-right" onclick="navigationStaging('right', '{{$game->id}}');"></span>
-                                @else
-                                Vão começar as Quartas de final
-
+                                
+                                @elseif($game->order > 12)
+                                Vão começar as semifinais
+        
                                 <span class="ctrl pull-left icon icon-arrow-left" onclick="navigationStaging('left', '{{$game->id}}');"></span>
                                 <span class="ctrl pull-right icon icon-arrow-right" onclick="navigationStaging('right', '{{$game->id}}');"></span>
+                               
+        
+                                @else
+                                Vão começar as Quartas de final
+        
+                                <span class="ctrl pull-left icon icon-arrow-left" onclick="navigationStaging('left', '{{$game->id}}');"></span>
+                                <span class="ctrl pull-right icon icon-arrow-right" onclick="navigationStaging('right', '{{$game->id}}');"></span>
+        
                                 @endif
                         </h1>
                 </div>
@@ -57,6 +66,11 @@
                                     </div>
                                 </div>
                                 @endforeach
+
+
+                                @if($game->order > 12)
+                                        <div class="col-md-12" style="background:#fff;min-height:700px;"> </div>
+                                @endif
                         </div>
                 </div>
             </div>
