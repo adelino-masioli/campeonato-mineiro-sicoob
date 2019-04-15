@@ -14,12 +14,20 @@
                                 {{$game->title}}
                                 <span class="ctrl pull-right icon icon-arrow-right" onclick="navigationStaging('right', '{{$game->id}}');"></span>
                                 
-                                @elseif($game->order > 12)
+                                @elseif($game->order > 12 && $game->order < 15)
                                 Vão começar as semifinais
         
                                 <span class="ctrl pull-left icon icon-arrow-left" onclick="navigationStaging('left', '{{$game->id}}');"></span>
                                 <span class="ctrl pull-right icon icon-arrow-right" onclick="navigationStaging('right', '{{$game->id}}');"></span>
                                
+                                @elseif($game->order > 14)
+                                Agora que são elas:<br/>
+                                chegaram os jogos da final.
+        
+                                <span class="ctrl pull-left icon icon-arrow-left" onclick="navigationStaging('left', '{{$game->id}}');"></span>
+                                <span class="ctrl pull-right icon icon-arrow-right" onclick="navigationStaging('right', '{{$game->id}}');"></span>
+                               
+
         
                                 @else
                                 Vão começar as Quartas de final
